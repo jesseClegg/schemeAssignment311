@@ -18,8 +18,9 @@
     ((= n 1)
      lst
      )
-  (else
-   (outterLoop (innerLoop lst) (- n 1));decrement n with each function call until list has been walked n-1 times
+   ;decrement n with each function call until list has been walked n-1 times
+   (else
+    (outterLoop (innerLoop lst) (- n 1))
    )
   )
 )  
@@ -60,3 +61,4 @@
 (bubbleSort '(3.14 0 -3.14))
 (bubbleSort '(100 100 100 7 100 7))
 (bubbleSort '(1 0.9 0.8 0.7 0.3 0.6 0.5 0.4 0.1 0 0.2))
+(bubbleSort '(20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0))

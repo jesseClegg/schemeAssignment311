@@ -1,4 +1,5 @@
-;Jesse Clegg
+; Jesse Clegg
+
 ; Take in a list and return the list with all elements formatted to absolute value 
 (define (getAbs lst)
   ; Base case = has walked entire list

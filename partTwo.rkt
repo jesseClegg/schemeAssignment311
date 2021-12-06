@@ -1,6 +1,7 @@
-;Jesse Clegg
-;Takes in a list and an atom
-;then removes all occurances of that atom, no matter how deeply nested
+; Jesse Clegg
+
+; Takes in a list and an atom
+; then removes all occurances of that atom, no matter how deeply nested
 (define (deleteAtom lst item)
   (cond ((null? lst);base case = empty list
          '()
@@ -64,10 +65,10 @@
 (deleteAtom '() 7)
 (deleteAtom '(4 6 23 900 72) 1)
 (deleteAtom '(4 (7 (6 (9 4))) 79 0 4) 4)
-(deleteAtom '((a b) c () d a c a a) 'a)
 (deleteAtom '(a b c d a c a a) 'a)
-(deleteAtom '(a b c d a c (a ((a)))a a) 'a)
+(deleteAtom '((a b) c () d a c a a) 'a)
 (deleteAtom '(((a (a)) b) c () d a c a a) 'a)
+(deleteAtom '(a b c d a c (a ((a)))a a) 'a)
 (newline)
 (newline)
 
@@ -77,8 +78,8 @@
 (swapTwo 1 5 '(5))
 (swapTwo 7  50 '(1000 67 800 (9) 10 700 8))
 (swapTwo 7 400 '(4 7 9 (69 95 7) 400 7 14))
-(swapTwo 'a 'b '((a b) c () d a c a a))
 (swapTwo 'a 'b '(a b c d a c a a))
+(swapTwo 'a 'b '((a b) c () d a c a a))
 (swapTwo 'a 'b '(((a (a)) b) c () d a c a a))
 (swapTwo 'a 'b '(a b c d a c (a ((a)))a a))
 (swapTwo 'bill 'william '(bill bill (bill sue) william bill))
